@@ -175,6 +175,6 @@ if (time > _bleedOut) exitWith
 if (alive _unit) then
 	{
 	_unit setUnconscious false;
-	_unit playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
+	_unit switchMove "";
 	_unit setBleedingremaining 0;
 	};
