@@ -75,7 +75,9 @@ private _initialRebelEquipment = [
 "V_Chestrig_blk","V_Chestrig_rgr","V_Chestrig_khk","V_Chestrig_oli","V_BandollierB_blk","V_BandollierB_cbr","V_BandollierB_rgr",
 "V_BandollierB_khk","V_BandollierB_oli","V_Rangemaster_belt",
 "Binocular",
-"acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"];
+"acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol",
+"2Rnd_12Gauge_Pellets","2Rnd_12Gauge_Slug",
+"sgun_HunterShotgun_01_F"];
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "tf_anprc155_coyote"};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
