@@ -50,17 +50,17 @@ if (!_hasMedkit && {count _medicFAKs == 0 && count _curedFAKs == 0}) exitWith
 
 private _timer = if ([_cured] call A3A_fnc_fatalWound) then
 {
-    time + 35 + (random 20)
+    time + 17 + (random 10)
 }
 else
 {
     if (_isMedic) then
     {
-        time + 10 + (random 5)
+        time + 5 + (random 2)
     }
     else
     {
-        time + 15 + (random 10)
+        time + 7 + (random 5)
     };
 };
 
