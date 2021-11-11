@@ -175,6 +175,6 @@ if (time > _bleedOut) exitWith
 if (alive _unit) then
 	{
 	_unit setUnconscious false;
-	_unit switchMove "";
+	[_unit,""] remoteExec ["switchMove"];
 	_unit setBleedingremaining 0;
 	};
