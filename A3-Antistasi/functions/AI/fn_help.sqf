@@ -114,17 +114,14 @@ if (_medicX != _unit) then
 					};
 				if ((alive _unit) and ([_medicX] call A3A_fnc_canFight) and (_medicX == vehicle _medicX) and !(_medicX getVariable ["cancelRevive",false])) then
 					{
-					_medicX playMove "amovpknlmstpsraswrfldnon";
+					_medicX playMove "";
 					_medicX stop true;
 					_unit stop true;
-					sleep 3;
 					_cured = [_unit,_medicX] call A3A_fnc_actionRevive;
-					_unit playMoveNow "";
 					if (_cured) then
 						{
 						if (_medicX != _unit) then {if (_isPlayer) then {_medicX groupChat format ["You are ready %1",name _unit]}};
 						};
-					sleep 5;
 					_medicX stop false;
 					_unit stop false;
 					_unit dofollow leader group _unit;
